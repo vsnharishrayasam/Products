@@ -1,0 +1,2090 @@
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:01:48) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (can't convert Hash into String) on line #18 of app/views/products/index.html.erb:
+15:     <td class="td-b-p"><%=h product.name %></td>
+16:     <td class="td-b-p"><%=h product.price %></td>
+17:     <td class="td-b-p"><%=h product.rating %></td>
+18: 	<% lnk = Util::shorten_with_bitly(Util::get_localhost_bitlyurl(products_path)) %>
+19:     <td class="td-b-p"><%= link_to 'Show', lnk %></td>
+20:     <td class="td-b-p"><%= link_to 'Edit', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(edit_product_path(product))) %></td>
+21:     <td class="td-b-p"><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/models/util.rb:13:in `initialize'
+    app/models/util.rb:13:in `open'
+    app/models/util.rb:13:in `shorten_with_bitly'
+    app/views/products/index.html.erb:18
+    app/views/products/index.html.erb:12:in `each'
+    app/views/products/index.html.erb:12
+    app/controllers/products_controller.rb:8:in `index'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (104.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:04:53) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (can't convert Hash into String) on line #18 of app/views/products/index.html.erb:
+15:     <td class="td-b-p"><%=h product.name %></td>
+16:     <td class="td-b-p"><%=h product.price %></td>
+17:     <td class="td-b-p"><%=h product.rating %></td>
+18: 	<% lnk = Util::shorten_with_bitly(Util::get_localhost_bitlyurl(products_path)) %>
+19:     <td class="td-b-p"><%= link_to 'Show', lnk %></td>
+20:     <td class="td-b-p"><%= link_to 'Edit', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(edit_product_path(product))) %></td>
+21:     <td class="td-b-p"><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/models/util.rb:13:in `initialize'
+    app/models/util.rb:13:in `open'
+    app/models/util.rb:13:in `shorten_with_bitly'
+    app/views/products/index.html.erb:18
+    app/views/products/index.html.erb:12:in `each'
+    app/views/products/index.html.erb:12
+    app/controllers/products_controller.rb:8:in `index'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (212.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:05:54) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (can't convert Hash into String) on line #18 of app/views/products/index.html.erb:
+15:     <td class="td-b-p"><%=h product.name %></td>
+16:     <td class="td-b-p"><%=h product.price %></td>
+17:     <td class="td-b-p"><%=h product.rating %></td>
+18: 	<% lnk = Util::shorten_with_bitly(Util::get_localhost_bitlyurl(products_path)) %>
+19:     <td class="td-b-p"><%= link_to 'Show', lnk %></td>
+20:     <td class="td-b-p"><%= link_to 'Edit', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(edit_product_path(product))) %></td>
+21:     <td class="td-b-p"><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/models/util.rb:13:in `initialize'
+    app/models/util.rb:13:in `open'
+    app/models/util.rb:13:in `shorten_with_bitly'
+    app/views/products/index.html.erb:18
+    app/views/products/index.html.erb:12:in `each'
+    app/views/products/index.html.erb:12
+    app/controllers/products_controller.rb:8:in `index'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:06:48) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (can't convert Hash into String) on line #18 of app/views/products/index.html.erb:
+15:     <td class="td-b-p"><%=h product.name %></td>
+16:     <td class="td-b-p"><%=h product.price %></td>
+17:     <td class="td-b-p"><%=h product.rating %></td>
+18: 	<% lnk = Util::shorten_with_bitly(Util::get_localhost_bitlyurl(products_path)) %>
+19:     <td class="td-b-p"><%= link_to 'Show', lnk %></td>
+20:     <td class="td-b-p"><%= link_to 'Edit', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(edit_product_path(product))) %></td>
+21:     <td class="td-b-p"><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/models/util.rb:13:in `initialize'
+    app/models/util.rb:13:in `open'
+    app/models/util.rb:13:in `shorten_with_bitly'
+    app/views/products/index.html.erb:18
+    app/views/products/index.html.erb:12:in `each'
+    app/views/products/index.html.erb:12
+    app/controllers/products_controller.rb:8:in `index'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (197.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:08:31) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (can't convert Hash into String) on line #18 of app/views/products/index.html.erb:
+15:     <td class="td-b-p"><%=h product.name %></td>
+16:     <td class="td-b-p"><%=h product.price %></td>
+17:     <td class="td-b-p"><%=h product.rating %></td>
+18: 	<% lnk = Util::shorten_with_bitly(Util::get_localhost_bitlyurl(products_path)) %>
+19:     <td class="td-b-p"><%= link_to 'Show', lnk %></td>
+20:     <td class="td-b-p"><%= link_to 'Edit', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(edit_product_path(product))) %></td>
+21:     <td class="td-b-p"><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/models/util.rb:13:in `initialize'
+    app/models/util.rb:13:in `open'
+    app/models/util.rb:13:in `shorten_with_bitly'
+    app/views/products/index.html.erb:18
+    app/views/products/index.html.erb:12:in `each'
+    app/views/products/index.html.erb:12
+    app/controllers/products_controller.rb:8:in `index'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:10:52) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 1769ms (View: 1746, DB: 7) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:15:17) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 1808ms (View: 1781, DB: 6) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:18:17) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 183613ms (View: 183589, DB: 8) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:39:59) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 11620ms (View: 11598, DB: 7) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2012-10-20 21:40:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (66.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 106ms (View: 26, DB: 69) | 200 OK [http://127.0.0.1/products/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:43:33) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 3888ms (View: 3867, DB: 5) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:47:00) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (44.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:48:11) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (34.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:56:01) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 13656ms (View: 13640, DB: 4) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:57:44) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 13016ms (View: 12995, DB: 6) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 21:59:14) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 140330ms (View: 140310, DB: 5) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 22:01:46) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 143133ms (View: 143112, DB: 5) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 22:09:17) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (no such file to load -- json) on line #18 of app/views/products/index.html.erb:
+15:     <td class="td-b-p"><%=h product.name %></td>
+16:     <td class="td-b-p"><%=h product.price %></td>
+17:     <td class="td-b-p"><%=h product.rating %></td>
+18: 	<% lnk = Util::shorten_with_bitly(Util::get_localhost_bitlyurl(products_path)) %>
+19:     <td class="td-b-p"><%= link_to 'Show', lnk %></td>
+20:     <td class="td-b-p"><%= link_to 'Edit', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(edit_product_path(product))) %></td>
+21:     <td class="td-b-p"><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/models/util.rb:7:in `shorten_with_bitly'
+    app/views/products/index.html.erb:18
+    app/views/products/index.html.erb:12:in `each'
+    app/views/products/index.html.erb:12
+    app/controllers/products_controller.rb:8:in `index'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (243.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 22:09:59) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (no such file to load -- json/pure) on line #18 of app/views/products/index.html.erb:
+15:     <td class="td-b-p"><%=h product.name %></td>
+16:     <td class="td-b-p"><%=h product.price %></td>
+17:     <td class="td-b-p"><%=h product.rating %></td>
+18: 	<% lnk = Util::shorten_with_bitly(Util::get_localhost_bitlyurl(products_path)) %>
+19:     <td class="td-b-p"><%= link_to 'Show', lnk %></td>
+20:     <td class="td-b-p"><%= link_to 'Edit', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(edit_product_path(product))) %></td>
+21:     <td class="td-b-p"><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/models/util.rb:7:in `shorten_with_bitly'
+    app/views/products/index.html.erb:18
+    app/views/products/index.html.erb:12:in `each'
+    app/views/products/index.html.erb:12
+    app/controllers/products_controller.rb:8:in `index'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (204.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 22:13:43) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (no such file to load -- json) on line #18 of app/views/products/index.html.erb:
+15:     <td class="td-b-p"><%=h product.name %></td>
+16:     <td class="td-b-p"><%=h product.price %></td>
+17:     <td class="td-b-p"><%=h product.rating %></td>
+18: 	<% lnk = Util::shorten_with_bitly(Util::get_localhost_bitlyurl(products_path)) %>
+19:     <td class="td-b-p"><%= link_to 'Show', lnk %></td>
+20:     <td class="td-b-p"><%= link_to 'Edit', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(edit_product_path(product))) %></td>
+21:     <td class="td-b-p"><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/models/util.rb:7:in `shorten_with_bitly'
+    app/views/products/index.html.erb:18
+    app/views/products/index.html.erb:12:in `each'
+    app/views/products/index.html.erb:12
+    app/controllers/products_controller.rb:8:in `index'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (201.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 22:16:23) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (no such file to load -- json) on line #18 of app/views/products/index.html.erb:
+15:     <td class="td-b-p"><%=h product.name %></td>
+16:     <td class="td-b-p"><%=h product.price %></td>
+17:     <td class="td-b-p"><%=h product.rating %></td>
+18: 	<% lnk = Util::shorten_with_bitly(Util::get_localhost_bitlyurl(products_path)) %>
+19:     <td class="td-b-p"><%= link_to 'Show', lnk %></td>
+20:     <td class="td-b-p"><%= link_to 'Edit', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(edit_product_path(product))) %></td>
+21:     <td class="td-b-p"><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/models/util.rb:8:in `shorten_with_bitly'
+    app/views/products/index.html.erb:18
+    app/views/products/index.html.erb:12:in `each'
+    app/views/products/index.html.erb:12
+    app/controllers/products_controller.rb:8:in `index'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (153.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 22:28:23) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (no such file to load -- json_pure) on line #18 of app/views/products/index.html.erb:
+15:     <td class="td-b-p"><%=h product.name %></td>
+16:     <td class="td-b-p"><%=h product.price %></td>
+17:     <td class="td-b-p"><%=h product.rating %></td>
+18: 	<% lnk = Util::shorten_with_bitly(Util::get_localhost_bitlyurl(products_path)) %>
+19:     <td class="td-b-p"><%= link_to 'Show', lnk %></td>
+20:     <td class="td-b-p"><%= link_to 'Edit', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(edit_product_path(product))) %></td>
+21:     <td class="td-b-p"><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/models/util.rb:8:in `shorten_with_bitly'
+    app/views/products/index.html.erb:18
+    app/views/products/index.html.erb:12:in `each'
+    app/views/products/index.html.erb:12
+    app/controllers/products_controller.rb:8:in `index'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 22:34:30) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 22:40:37) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 1264ms (View: 1247, DB: 5) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2012-10-20 22:40:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 744ms (View: 729, DB: 5) | 200 OK [http://localhost/products/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 22:41:06) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 1333ms (View: 1310, DB: 6) | 200 OK [http://127.0.0.1/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2012-10-20 22:41:24) [GET]
+  [4;36;1mProduct Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 48ms (View: 30, DB: 6) | 200 OK [http://127.0.0.1/products/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 22:41:47) [GET]
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;36;1mProduct Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 2082ms (View: 2059, DB: 9) | 200 OK [http://127.0.0.1/products]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 22:42:27) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;36;1mProduct Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 1891ms (View: 1869, DB: 6) | 200 OK [http://127.0.0.1/products]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-20 22:42:54) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;36;1mProduct Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 1944ms (View: 1922, DB: 9) | 200 OK [http://127.0.0.1/products]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-20 22:43:37) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 32ms (View: 19, DB: 4) | 200 OK [http://127.0.0.1/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-20 22:43:38) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-20 22:43:44) [POST]
+  Parameters: {"authenticity_token"=>"5D7jfzS7wHjJGf48r03qiV0jfzTj778cMDiGHEDZ/Hw=", "_"=>"", "page_no"=>"0"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 0, 10[0m
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered products/_res (59.0ms)
+Completed in 84ms (View: 66, DB: 5) | 200 OK [http://127.0.0.1/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-20 22:43:46) [POST]
+  Parameters: {"authenticity_token"=>"5D7jfzS7wHjJGf48r03qiV0jfzTj778cMDiGHEDZ/Hw=", "_"=>"", "page_no"=>"1"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered products/_res (9.0ms)
+Completed in 28ms (View: 9, DB: 5) | 200 OK [http://127.0.0.1/products_view]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-20 22:43:48) [POST]
+  Parameters: {"authenticity_token"=>"5D7jfzS7wHjJGf48r03qiV0jfzTj778cMDiGHEDZ/Hw=", "_"=>"", "page_no"=>"2"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 20, 10[0m
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered products/_res (9.0ms)
+Completed in 28ms (View: 9, DB: 6) | 200 OK [http://127.0.0.1/products_view]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-20 22:43:50) [POST]
+  Parameters: {"authenticity_token"=>"5D7jfzS7wHjJGf48r03qiV0jfzTj778cMDiGHEDZ/Hw=", "_"=>"", "page_no"=>"3"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 30, 10[0m
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered products/_res (8.0ms)
+Completed in 25ms (View: 7, DB: 6) | 200 OK [http://127.0.0.1/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-20 22:43:52) [POST]
+  Parameters: {"authenticity_token"=>"5D7jfzS7wHjJGf48r03qiV0jfzTj778cMDiGHEDZ/Hw=", "_"=>"", "page_no"=>"4"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 40, 10[0m
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered products/_res (8.0ms)
+Completed in 25ms (View: 7, DB: 5) | 200 OK [http://127.0.0.1/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-20 22:43:54) [POST]
+  Parameters: {"authenticity_token"=>"5D7jfzS7wHjJGf48r03qiV0jfzTj778cMDiGHEDZ/Hw=", "_"=>"", "page_no"=>"5"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 50, 10[0m
+  [4;36;1mProduct Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered products/_res (8.0ms)
+Completed in 25ms (View: 6, DB: 6) | 200 OK [http://127.0.0.1/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-20 22:43:55) [POST]
+  Parameters: {"authenticity_token"=>"5D7jfzS7wHjJGf48r03qiV0jfzTj778cMDiGHEDZ/Hw=", "_"=>"", "page_no"=>"6"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 60, 10[0m
+  [4;36;1mProduct Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered products/_res (8.0ms)
+Completed in 25ms (View: 6, DB: 6) | 200 OK [http://127.0.0.1/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-20 22:43:57) [POST]
+  Parameters: {"authenticity_token"=>"5D7jfzS7wHjJGf48r03qiV0jfzTj778cMDiGHEDZ/Hw=", "_"=>"", "page_no"=>"7"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 70, 10[0m
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered products/_res (9.0ms)
+Completed in 25ms (View: 7, DB: 5) | 200 OK [http://127.0.0.1/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-20 22:43:58) [POST]
+  Parameters: {"authenticity_token"=>"5D7jfzS7wHjJGf48r03qiV0jfzTj778cMDiGHEDZ/Hw=", "_"=>"", "page_no"=>"8"}
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 80, 10[0m
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered products/_res (8.0ms)
+Completed in 24ms (View: 7, DB: 6) | 200 OK [http://127.0.0.1/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2012-10-20 22:45:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 1573ms (View: 1559, DB: 4) | 200 OK [http://localhost/products/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2012-10-20 22:45:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 791ms (View: 771, DB: 6) | 200 OK [http://localhost/products/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 15:40:28) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 9169ms (View: 9151, DB: 7) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 15:40:38) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 15:41:14) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 5ms (View: 2, DB: 1) | 404 Not Found [http://localhost/auth/google]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 15:41:19) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;36;1mSocialAuth Columns (49.0ms)[0m   [0;1mSHOW FIELDS FROM `social_auths`[0m
+  [4;35;1mSocialAuth Load (0.0ms)[0m   [0mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSocialAuth Create (0.0ms)[0m   [0mMysql::Error: Column 'access_token' cannot be null: INSERT INTO `social_auths` (`created_at`, `updated_at`, `uid`, `user_id`, `provider`, `access_token`) VALUES('2012-10-21 10:11:19', '2012-10-21 10:11:19', 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s', '', 0, NULL)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Column 'access_token' cannot be null: INSERT INTO `social_auths` (`created_at`, `updated_at`, `uid`, `user_id`, `provider`, `access_token`) VALUES('2012-10-21 10:11:19', '2012-10-21 10:11:19', 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s', '', 0, NULL)):
+  app/controllers/social_controller.rb:18:in `create'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:167:in `call_app!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:131:in `callback_phase'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-openid-0.3.2/lib/omniauth/strategies/open_id.rb:91:in `callback_phase'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:68:in `callback_call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:42:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (138.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 15:42:57) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 6ms (View: 2, DB: 1) | 404 Not Found [http://localhost/auth/google]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 15:43:00) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;35;1mSocialAuth Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `social_auths`[0m
+  [4;36;1mSocialAuth Load (0.0ms)[0m   [0;1mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSocialAuth Create (0.0ms)[0m   [0;1mMysql::Error: Column 'access_token' cannot be null: INSERT INTO `social_auths` (`created_at`, `updated_at`, `uid`, `user_id`, `provider`, `access_token`) VALUES('2012-10-21 10:13:00', '2012-10-21 10:13:00', 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s', '', 0, NULL)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Column 'access_token' cannot be null: INSERT INTO `social_auths` (`created_at`, `updated_at`, `uid`, `user_id`, `provider`, `access_token`) VALUES('2012-10-21 10:13:00', '2012-10-21 10:13:00', 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s', '', 0, NULL)):
+  app/controllers/social_controller.rb:18:in `create'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:167:in `call_app!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:131:in `callback_phase'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-openid-0.3.2/lib/omniauth/strategies/open_id.rb:91:in `callback_phase'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:68:in `callback_call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:42:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (317.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 15:43:52) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 6ms (View: 1, DB: 0) | 404 Not Found [http://localhost/auth/google]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 15:43:55) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;36;1mSocialAuth Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `social_auths`[0m
+  [4;35;1mSocialAuth Load (1.0ms)[0m   [0mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSocialAuth Create (1.0ms)[0m   [0mINSERT INTO `social_auths` (`created_at`, `updated_at`, `uid`, `user_id`, `provider`, `access_token`) VALUES('2012-10-21 10:13:55', '2012-10-21 10:13:55', 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s', '', 0, NULL)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionView::MissingTemplate (Missing template social/create.erb in view path app/views):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:167:in `call_app!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:131:in `callback_phase'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-openid-0.3.2/lib/omniauth/strategies/open_id.rb:91:in `callback_phase'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:68:in `callback_call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:42:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 15:46:19) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 7ms (View: 2, DB: 1) | 404 Not Found [http://localhost/auth/google]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 15:46:22) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;35;1mSocialAuth Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `social_auths`[0m
+  [4;36;1mSocialAuth Load (1.0ms)[0m   [0;1mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+Redirected to http://localhost:3000/products_view
+Completed in 22ms (DB: 5) | 302 Found [http://localhost/auth/google/callback]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 15:46:22) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 33ms (View: 17, DB: 5) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 15:46:23) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:07:23) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 55ms (View: 32, DB: 9) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:07:24) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:32:56) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 34ms (View: 21, DB: 4) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:32:57) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:33:46) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 64ms (View: 35, DB: 19) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:33:48) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:36:59) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 39ms (View: 20, DB: 6) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:37:00) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 16:37:06) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 5ms (View: 2, DB: 1) | 404 Not Found [http://localhost/auth/google]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 16:37:10) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;35;1mSocialAuth Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `social_auths`[0m
+  [4;36;1mSocialAuth Load (0.0ms)[0m   [0;1mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+Redirected to http://localhost:3000/products_view
+Completed in 20ms (DB: 5) | 302 Found [http://localhost/auth/google/callback]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:37:10) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 32ms (View: 18, DB: 4) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:37:11) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 16:38:59) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 5ms (View: 2, DB: 1) | 404 Not Found [http://localhost/auth/google]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 16:39:02) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;35;1mSocialAuth Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `social_auths`[0m
+  [4;36;1mSocialAuth Load (1.0ms)[0m   [0;1mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+Redirected to http://localhost:3000/products_view
+Completed in 34ms (DB: 7) | 302 Found [http://localhost/auth/google/callback]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:39:03) [GET]
+  [4;35;1mProduct Load (2.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 41ms (View: 19, DB: 10) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:39:04) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:39:22) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 27ms (View: 13, DB: 7) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:39:23) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:43:33) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+ERROR: compiling _run_erb_app47views47layouts47products46html46erb RAISED compile error
+D:/testrails/products/app/views/layouts/products.html.erb:19: syntax error, unexpected '<'
+    <div style="padding:10px 10px 0...
+     ^
+D:/testrails/products/app/views/layouts/products.html.erb:20: syntax error, unexpected '<'
+      <a href="/auth/google">Login/Si...
+       ^
+D:/testrails/products/app/views/layouts/products.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...auth/google">Login/Signup with Google <br><img src="/images/...
+                              ^
+D:/testrails/products/app/views/layouts/products.html.erb:20: syntax error, unexpected '<'
+...Login/Signup with Google <br><img src="/images/google_logo.j...
+                              ^
+D:/testrails/products/app/views/layouts/products.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting kEND
+...images/google_logo.jpg" height="30px" width="35px"/></a>
+                              ^
+D:/testrails/products/app/views/layouts/products.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting kEND
+..._logo.jpg" height="30px" width="35px"/></a>
+                              ^
+D:/testrails/products/app/views/layouts/products.html.erb:20: syntax error, unexpected '>'
+..." height="30px" width="35px"/></a>
+                              ^
+D:/testrails/products/app/views/layouts/products.html.erb:21: unknown regexp options - dv
+D:/testrails/products/app/views/layouts/products.html.erb:22: syntax error, unexpected '<'
+    <% else ; @output_buffer.concat "\n        "
+     ^
+Function body:           def _run_erb_app47views47layouts47products46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\n       \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n  <title>Products: "
+
+
+
+
+
+; @output_buffer.concat(( controller.action_name ).to_s); @output_buffer.concat "</title>\n  "
+; @output_buffer.concat(( stylesheet_link_tag 'scaffold' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( javascript_include_tag :defaults ).to_s); @output_buffer.concat "\n \n</head>\n<body>\n\n<p style=\"color: green\">"
+
+
+
+
+; @output_buffer.concat(( notice ).to_s); @output_buffer.concat "</p>\n<p style=\"color: green\">"
+; @output_buffer.concat(( notice ).to_s); @output_buffer.concat "</p>\n  <div style=\"width:850px;margin-left:auto;margin-right:auto;\">\n    <div class=\"pane2\" style=\"background-color:#ffffff;\">\n    "
+
+
+;  if(session[:user].nil?)
+    <div style="padding:10px 10px 0px 10px;margin-left:auto;margin-right:auto;text-align:center;">
+      <a href="/auth/google">Login/Signup with Google <br><img src="/images/google_logo.jpg" height="30px" width="35px"/></a>
+    </div>
+    <% else ; @output_buffer.concat "\n        "
+; @output_buffer.concat(( session[:user_name] ).to_s); @output_buffer.concat "\n        <a href=\"/logout\">Logout</a>\n    "
+
+;  end ; @output_buffer.concat "\n    </div>\n  </div>\n"
+
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n\n</body>\n</html>\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: D:/testrails/products/app/views/layouts/products.html.erb:35:in `compile!'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_view/renderable.rb:61:in `compile'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_view/renderable.rb:28:in `render'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_view/template.rb:205:in `render_template'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_view/base.rb:265:in `render'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_view/base.rb:352:in `_render_with_layout'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_view/base.rb:262:in `render'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/base.rb:1252:in `render_for_file'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/base.rb:936:in `render_without_benchmark'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/benchmarking.rb:51:in `render'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.12/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+D:/InstantRails-2.0-win/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.12/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/benchmarking.rb:51:in `render'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/base.rb:1328:in `default_render'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/base.rb:1334:in `perform_action_without_filters'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/filters.rb:617:in `call_filters'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.12/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+D:/InstantRails-2.0-win/ruby/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.12/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/flash.rb:151:in `perform_action'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/base.rb:532:in `send'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/base.rb:532:in `process_without_filters'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/filters.rb:606:in `process'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/base.rb:391:in `process'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/base.rb:386:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/routing/route_set.rb:438:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/dispatcher.rb:87:in `dispatch'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/dispatcher.rb:121:in `_call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.12/lib/active_record/query_cache.rb:29:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.12/lib/active_record/query_cache.rb:29:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.12/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.12/lib/active_record/query_cache.rb:9:in `cache'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.12/lib/active_record/query_cache.rb:28:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.12/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/string_coercion.rb:25:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/params_parser.rb:15:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/session/cookie_store.rb:99:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/failsafe.rb:26:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/dispatcher.rb:114:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/reloader.rb:34:in `run'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.12/lib/action_controller/dispatcher.rb:108:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.3.12/lib/rails/rack/static.rb:31:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.3.12/lib/rails/rack/log_tailer.rb:17:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:159:in `process_client'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `each'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `process_client'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `initialize'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `new'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `initialize'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `new'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `run'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/rails-2.3.12/lib/commands/server.rb:111
+D:/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:55:in `gem_original_require'
+D:/InstantRails-2.0-win/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:55:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+D:/testrails/products/app/views/layouts/products.html.erb:19: syntax error, unexpected '<'
+    <div style="padding:10px 10px 0...
+     ^
+D:/testrails/products/app/views/layouts/products.html.erb:20: syntax error, unexpected '<'
+      <a href="/auth/google">Login/Si...
+       ^
+D:/testrails/products/app/views/layouts/products.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...auth/google">Login/Signup with Google <br><img src="/images/...
+                              ^
+D:/testrails/products/app/views/layouts/products.html.erb:20: syntax error, unexpected '<'
+...Login/Signup with Google <br><img src="/images/google_logo.j...
+                              ^
+D:/testrails/products/app/views/layouts/products.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting kEND
+...images/google_logo.jpg" height="30px" width="35px"/></a>
+                              ^
+D:/testrails/products/app/views/layouts/products.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting kEND
+..._logo.jpg" height="30px" width="35px"/></a>
+                              ^
+D:/testrails/products/app/views/layouts/products.html.erb:20: syntax error, unexpected '>'
+..." height="30px" width="35px"/></a>
+                              ^
+D:/testrails/products/app/views/layouts/products.html.erb:21: unknown regexp options - dv
+D:/testrails/products/app/views/layouts/products.html.erb:22: syntax error, unexpected '<'
+    <% else ; @output_buffer.concat "\n        "
+     ^) on line #19 of app/views/layouts/products.html.erb:
+16:   <div style="width:850px;margin-left:auto;margin-right:auto;">
+17:     <div class="pane2" style="background-color:#ffffff;">
+18:     <% if(session[:user].nil?)
+19:     <div style="padding:10px 10px 0px 10px;margin-left:auto;margin-right:auto;text-align:center;">
+20:       <a href="/auth/google">Login/Signup with Google <br><img src="/images/google_logo.jpg" height="30px" width="35px"/></a>
+21:     </div>
+22:     <% else %>
+
+    app/views/layouts/products.html.erb:35:in `compile!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+    D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendered rescues/_trace (217.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:43:49) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 39ms (View: 25, DB: 6) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:43:50) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 16:43:58) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 9ms (View: 2, DB: 3) | 404 Not Found [http://localhost/auth/google]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 16:44:01) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;35;1mSocialAuth Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `social_auths`[0m
+  [4;36;1mSocialAuth Load (0.0ms)[0m   [0;1mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+Redirected to http://localhost:3000/products_view
+Completed in 28ms (DB: 6) | 302 Found [http://localhost/auth/google/callback]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:44:01) [GET]
+  [4;35;1mProduct Load (3.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 41ms (View: 19, DB: 11) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:44:02) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 16:46:54) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 3ms (View: 1, DB: 1) | 404 Not Found [http://localhost/auth/google]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 16:46:57) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;35;1mSocialAuth Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `social_auths`[0m
+  [4;36;1mSocialAuth Load (0.0ms)[0m   [0;1mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSocialAuth Create (0.0ms)[0m   [0;1mINSERT INTO `social_auths` (`created_at`, `updated_at`, `uid`, `user_id`, `user_name`, `provider`, `access_token`) VALUES('2012-10-21 11:16:57', '2012-10-21 11:16:57', 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s', '', '', 0, NULL)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/products_view
+Completed in 21ms (DB: 3) | 302 Found [http://localhost/auth/google/callback]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:46:57) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 17ms (View: 7, DB: 3) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:46:58) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#logout (for 127.0.0.1 at 2012-10-21 16:51:11) [GET]
+Redirected to http://localhost:3000/products_view
+Completed in 5ms (DB: 2) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:51:11) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 32ms (View: 17, DB: 5) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:51:12) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 16:51:16) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 6ms (View: 2, DB: 0) | 404 Not Found [http://localhost/auth/google]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 16:51:19) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;36;1mSocialAuth Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `social_auths`[0m
+  [4;35;1mSocialAuth Load (0.0ms)[0m   [0mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSocialAuth Create (0.0ms)[0m   [0mINSERT INTO `social_auths` (`created_at`, `updated_at`, `uid`, `user_id`, `user_name`, `provider`, `access_token`) VALUES('2012-10-21 11:21:19', '2012-10-21 11:21:19', 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s', '', 'harish kumar', 0, NULL)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/products_view
+Completed in 32ms (DB: 4) | 302 Found [http://localhost/auth/google/callback]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:51:19) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 22ms (View: 11, DB: 3) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:51:20) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:52:31) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 25ms (View: 12, DB: 4) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:52:40) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#logout (for 127.0.0.1 at 2012-10-21 16:52:47) [GET]
+Redirected to http://localhost:3000/products_view
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:52:47) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 31ms (View: 17, DB: 3) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:52:48) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 16:52:54) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 6ms (View: 1, DB: 1) | 404 Not Found [http://localhost/auth/google]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 16:52:57) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;35;1mSocialAuth Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `social_auths`[0m
+  [4;36;1mSocialAuth Load (1.0ms)[0m   [0;1mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSocialAuth Create (1.0ms)[0m   [0;1mINSERT INTO `social_auths` (`created_at`, `updated_at`, `uid`, `user_id`, `user_name`, `provider`, `access_token`) VALUES('2012-10-21 11:22:57', '2012-10-21 11:22:57', 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s', '', 'harish kumar', 0, NULL)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/products_view
+Completed in 36ms (DB: 10) | 302 Found [http://localhost/auth/google/callback]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:52:57) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 26ms (View: 13, DB: 6) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:52:58) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#logout (for 127.0.0.1 at 2012-10-21 16:54:08) [GET]
+Redirected to http://localhost:3000/products_view
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:54:08) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 24ms (View: 12, DB: 4) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:54:09) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 16:54:11) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 4ms (View: 1, DB: 0) | 404 Not Found [http://localhost/auth/google]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 16:54:14) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;36;1mSocialAuth Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `social_auths`[0m
+  [4;35;1mSocialAuth Load (1.0ms)[0m   [0mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+Redirected to http://localhost:3000/products_view
+Completed in 15ms (DB: 4) | 302 Found [http://localhost/auth/google/callback]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:54:14) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 17ms (View: 8, DB: 3) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:54:14) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-21 16:54:26) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 2099ms (View: 2079, DB: 5) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2012-10-21 16:54:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 1671ms (View: 1538, DB: 8) | 200 OK [http://localhost/products/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#logout (for 127.0.0.1 at 2012-10-21 16:54:36) [GET]
+Redirected to http://localhost:3000/products_view
+Completed in 3ms (DB: 1) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:54:36) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 23ms (View: 11, DB: 3) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:54:36) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-21 16:54:42) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 2056ms (View: 2039, DB: 7) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:56:19) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 31ms (View: 19, DB: 3) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:56:20) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 16:56:22) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 3ms (View: 2, DB: 0) | 404 Not Found [http://localhost/auth/google]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 16:56:25) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;36;1mSocialAuth Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `social_auths`[0m
+  [4;35;1mSocialAuth Load (0.0ms)[0m   [0mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+Redirected to http://localhost:3000/products_view
+Completed in 18ms (DB: 3) | 302 Found [http://localhost/auth/google/callback]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:56:25) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 18ms (View: 8, DB: 3) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:56:25) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 16:57:23) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 44ms (View: 26, DB: 7) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 16:57:25) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:00:51) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 66ms (View: 34, DB: 6) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 17:00:52) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:01:20) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 31ms (View: 18, DB: 5) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 17:01:22) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#logout (for 127.0.0.1 at 2012-10-21 17:01:28) [GET]
+Redirected to http://localhost:3000/products_view
+Completed in 3ms (DB: 1) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:01:28) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 26ms (View: 12, DB: 6) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 17:01:30) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 17:01:32) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 5ms (View: 2, DB: 2) | 404 Not Found [http://localhost/auth/google]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 17:01:36) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;36;1mSocialAuth Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `social_auths`[0m
+  [4;35;1mSocialAuth Load (0.0ms)[0m   [0mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+Redirected to http://localhost:3000/products_view
+Completed in 25ms (DB: 6) | 302 Found [http://localhost/auth/google/callback]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:01:36) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 26ms (View: 12, DB: 6) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 17:01:36) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#logout (for 127.0.0.1 at 2012-10-21 17:01:57) [GET]
+Redirected to http://localhost:3000/products_view
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:01:57) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 33ms (View: 15, DB: 5) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 17:01:59) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 17:02:00) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 6ms (View: 2, DB: 0) | 404 Not Found [http://localhost/auth/google]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 17:02:03) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;36;1mSocialAuth Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `social_auths`[0m
+  [4;35;1mSocialAuth Load (1.0ms)[0m   [0mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSocialAuth Create (0.0ms)[0m   [0mINSERT INTO `social_auths` (`created_at`, `updated_at`, `uid`, `user_id`, `user_name`, `provider`, `access_token`, `email`) VALUES('2012-10-21 11:32:03', '2012-10-21 11:32:03', 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s', '', 'harish kumar', 0, NULL, 'rayasamharish@gmail.com')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/products_view
+Completed in 42ms (DB: 8) | 302 Found [http://localhost/auth/google/callback]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:02:03) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 28ms (View: 15, DB: 4) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 17:02:04) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-21 17:02:22) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 1760ms (View: 1748, DB: 4) | 200 OK [http://localhost/products]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-21 17:03:26) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 2156ms (View: 2138, DB: 5) | 200 OK [http://localhost/products]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:03:35) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 42ms (View: 20, DB: 7) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 17:03:36) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:05:51) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 54ms (View: 26, DB: 10) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 17:05:52) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-21 17:05:58) [GET]
+  [4;35;1mProduct Load (8.0ms)[0m   [0mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 2240ms (View: 2215, DB: 12) | 200 OK [http://localhost/products]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:07:26) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 68ms (View: 44, DB: 7) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#logout (for 127.0.0.1 at 2012-10-21 17:07:39) [GET]
+Redirected to http://localhost:3000/products_view
+Completed in 4ms (DB: 1) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:07:39) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 38ms (View: 17, DB: 4) | 200 OK [http://localhost/products_view]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 17:07:40) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#blank (for 127.0.0.1 at 2012-10-21 17:07:44) [GET]
+  Parameters: {"provider"=>"google"}
+Completed in 5ms (View: 2, DB: 0) | 404 Not Found [http://localhost/auth/google]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#create (for 127.0.0.1 at 2012-10-21 17:07:48) [POST]
+  Parameters: {"provider"=>"google"}
+  [4;35;1mSocialAuth Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `social_auths`[0m
+  [4;36;1mSocialAuth Load (1.0ms)[0m   [0;1mSELECT * FROM `social_auths` WHERE (`social_auths`.`uid` = 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s' AND `social_auths`.`provider` = 'google') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSocialAuth Create (0.0ms)[0m   [0;1mINSERT INTO `social_auths` (`created_at`, `updated_at`, `uid`, `user_id`, `user_name`, `provider`, `access_token`, `email`) VALUES('2012-10-21 11:37:48', '2012-10-21 11:37:48', 'https://www.google.com/accounts/o8/id?id=AItOawnBujW7EpO8MiywDVZ01ToSHOj71fzxB2s', '', 'harish kumar', 0, NULL, 'rayasamharish@gmail.com')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/products_view
+Completed in 50ms (DB: 9) | 302 Found [http://localhost/auth/google/callback]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:07:48) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 27ms (View: 14, DB: 5) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 17:07:49) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-21 17:08:07) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 2059ms (View: 2036, DB: 9) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#logout (for 127.0.0.1 at 2012-10-21 17:08:12) [GET]
+Redirected to http://localhost:3000/products_view
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:08:12) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 43ms (View: 23, DB: 7) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 17:08:13) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2012-10-21 17:08:16) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 2067ms (View: 2048, DB: 5) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SocialController#logout (for 127.0.0.1 at 2012-10-21 17:08:43) [GET]
+Redirected to http://localhost:3000/products_view
+Completed in 5ms (DB: 1) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#products_view (for 127.0.0.1 at 2012-10-21 17:08:43) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` LIMIT 10, 10[0m
+Rendering template within layouts/products
+Rendering products/products_view
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 30ms (View: 15, DB: 5) | 200 OK [http://localhost/products_view]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-10-21 17:08:44) [GET]
+
+ActionController::RoutingError (No route matches "/public/images/loading-452.jpg" with {:method=>:get}):
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:44:in `call!'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/strategy.rb:30:in `call'
+  D:/InstantRails-2.0-win/ruby/lib/ruby/gems/1.8/gems/oa-core-0.3.2/lib/omniauth/builder.rb:30:in `call'
+
+Rendering rescues/layout (not_found)

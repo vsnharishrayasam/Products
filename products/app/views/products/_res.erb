@@ -1,0 +1,19 @@
+<div id="temp">  
+<% for p in @products %>
+	 	<div style="float:left;margin:20px;height:200px;width:200px;background-color:#FFCCCC;">
+		  <b>Product : <%= p.name %></b><br>
+		  <b>Price : <%= p.price %></b><br>
+		  <b>Rating : <%= p.rating %></b><br>
+		</div>
+<% end %>   
+</div>
+<script type="text/javascript">
+   <% if(!@products.nil? && @products.size >= @per_page) %>
+      document.getElementById('main_div').innerHTML += document.getElementById('temp').innerHTML;
+      document.getElementById('page_no').value = <%= @page_no.to_i + 1 %>;
+      document.getElementById('update').innerHTML = "";
+   <% else %>
+     Element.hide('show_more_link');
+	 document.getElementById('page_no').value = 1;
+   <% end %>    
+</script>

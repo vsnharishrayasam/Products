@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @product.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @product.price %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%=h @product.rating %>
+</p>
+
+
+<%= link_to 'Edit', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(edit_product_path(@product))) %> |
+<%= link_to 'Back', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(products_path)) %>

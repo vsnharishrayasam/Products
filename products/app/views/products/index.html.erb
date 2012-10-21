@@ -1,0 +1,28 @@
+<h1>Listing products</h1><%= link_to 'New product', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(new_product_path)) %>
+
+
+<table style="width:80%">
+  <tr>
+    <th class="td-title-gr">ID</th>
+	<th class="td-title-gr">Name</th>
+    <th class="td-title-gr">Price</th>
+    <th class="td-title-gr">Rating</th>
+	<th colspan="3" class="td-title-gr"></th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+  	<td class="td-b-p"><%=h product.id %></td>
+    <td class="td-b-p"><%=h product.name %></td>
+    <td class="td-b-p"><%=h product.price %></td>
+    <td class="td-b-p"><%=h product.rating %></td>
+	<td class="td-b-p"><%= link_to 'Show', product %></td>
+    <td class="td-b-p"><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td class="td-b-p"><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New product', Util::shorten_with_bitly(Util::get_localhost_bitlyurl(new_product_path)) %>

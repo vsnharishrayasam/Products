@@ -1,0 +1,30 @@
+<h1>Check out Products</h1>
+<div id="main_div" style="width:90%">
+
+<% for p in @products %>
+	 	<div style="float:left;margin:20px;height:200px;width:200px;background-color:#FFCCCC;">
+		  <b>Product : <%= p.name %></b><br>
+		  <b>Price : <%= p.price %></b><br>
+		  <b>Rating : <%= p.rating %></b><br>
+		</div>
+<% end %>    
+
+</div>
+
+<div style="clear:both;"></div>
+
+<div id="update"></div>
+
+       
+<% form_remote_tag  :url => product_paginate_url(),                              
+                    :loading => "Element.show('status_loading');",
+                    :complete => "Element.hide('status_loading');",
+                    :failure => "Element.hide('show_more_link');",
+                    :update => {:success => "update"},
+                   :html => {:id=>"show_more_link"} do
+%>
+        <input type="hidden" id="page_no" name="page_no" value="0"/>        
+        <center><input type="submit" id="show_more_link" class="more-comments" value="Show More ..."></center>
+		<span id="status_loading" style="display:none"><img src="../../../public/images/loading-452.jpg"></img></span> 
+		       
+<% end %>        
